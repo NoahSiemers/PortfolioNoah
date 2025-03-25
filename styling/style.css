@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #F1EFF0; /* Matches the sides to this color */
+    color: #000;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #0E814B;
+  }
+  
+  header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  nav {
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+  }
+    /* Logo link styling */
+  .logo-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Ensures it inherits the current color (or set your own) */
+  }
+
+  .logo-link:hover {
+    text-decoration: none; /* Ensures no underline on hover as well */
+  }
+
+  /* Optional: Additional styling for the logo text */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0E814B; /* Adjust the color as needed */
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url('../images/Plants-background.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center -80px;
+    color: #0E814B;
+  }
+
+  .content2-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    min-height: 100vh;
+    padding: 20px;
+    background-image: url('../images/Plants-background.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center -80px;
+    color: #0E814B;
+  }
+
+  .content2 {
+    flex: 1;
+    max-width: 45%;
+    margin: 20px;
+    padding: 30px;
+    background-color: #D0F0C0E0; /* Light background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .content2 h1 {
+    margin-bottom: 20px;
+    color: #0E814B;
+  }
+
+  .content2 .intro a {
+    color: #073821; /* Sets the text color to light blue */
+  }
+
+  .content2 .intro a:hover {
+    color: #0e633b; 
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    min-height: 100vh; /* Ensures the background section takes full viewport height */
+    padding: 80px;
+    background-image: url('../images/Plants-background.webp');
+    background-size: contain; /* Ensures the entire image is visible */
+    background-repeat: no-repeat;
+    background-attachment: scroll; /* Background scrolls with the page */
+    background-position: center -80px;
+    color: #0E814B;
+  }
+  
+  .content .intro {
+    background-color: #D0F0C0B0; /* Light green semi-transparent */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+  }
+  
+  .content .intro h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  
+  .content .intro p {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .content .content-btn {
+    padding: 10px 20px;
+    background-color: #0E814B;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .secondary-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 60px;
+    background-color: #D8E3D4; /* Neutral background color */
+  }
+  
+  .block {
+    background-color: #D0F0C0; /* Light green */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 45%;
+    text-align: center;
+    color: #0E814B;
+  }
+  
+  .block h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .block p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .block .block-btn {
+    padding: 10px 20px;
+    background-color: #0E814B;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ddd;
+    font-size: 14px;
+  }
+  
+
+  /* Projects pagina */
+
+  /* Projects Section Styling */
+  .projects-section {
+    text-align: center;
+    padding: 40px;
+  }
+
+  .projects-section h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #0E814B;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .grid-item {
+    background-color: #F1EFF0; /* Light green background */
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures content stays spaced */
+    align-items: center;
+    text-align: center;
+    height: 300px; /* Ensures consistent height for all boxes */
+    padding: 20px;
+    position: relative; /* Allows absolute positioning of text */
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .grid-item img {
+    max-height: 150px; /* Restricts image height */
+    max-width: 100%; /* Ensures it doesn't overflow horizontally */
+    object-fit: contain; /* Centers image */
+    flex-grow: 1;
+  }
+
+  .grid-item h2 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0E814B;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: absolute;
+    bottom: 10px; /* Positions text at the bottom */
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .grid-container a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .grid-container a:hover{
+    transform: scale(1.05); /* Subtle zoom on hover */
+    box-shadow: 0px 6px 11px #0e814b85;
+  }
+
+  /* General styling for the Sopranos section */
+.sopranos-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #D8E3D4; /* Light gray background */
+}
+
+.sopranos-section h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #0E814B; /* Dark green */
+}
+
+/* Grid container for Sopranos blocks */
+.sopranos-grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 300px);
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+
+/* Individual grid items for Sopranos section */
+.sopranos-grid-item {
+  background-color: #FFFFFF; /* White background */
+  border: 2px solid #D8E3D4; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  height: 150px; /* Fixed height for consistency */
+  display: flex; /* Flexbox for centering */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center;
+  transition: transform 0.2s ease-in-out; /* Animation on hover */
+}
+
+/* Text inside the grid-item */
+.sopranos-grid-item h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #0E814B; /* Dark green */
+  margin: 0; /* Remove default margin */
+}
+
+/* Ensure the entire grid item is clickable */
+.sopranos-grid-container a {
+  text-decoration: none;
+  color: inherit; /* Inherit the color for links */
+  display: block;
+}
+
+/* Hover effect for grid items */
+.sopranos-grid-container a:hover .sopranos-grid-item {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0px 6px 11px #0e814b85; /* More pronounced shadow */
+}
